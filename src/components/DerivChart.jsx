@@ -8,7 +8,7 @@ const DerivChart = () => {
       <Chart
         symbol="R_100"
         chartType={ChartType.Candle}
-        granularity={60} // 1 minuto (pode usar 0 para ticks)
+        granularity={60} // 1 minuto
         startEpoch={Math.floor(Date.now() / 1000) - 3600} // últimos 60 minutos
         endEpoch="latest"
         settings={{
